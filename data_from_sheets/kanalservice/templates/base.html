@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">          
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      {% block title %}
+        Контентище
+      {% endblock %}
+    </title>
+  </head>
+  <body>       
+    <header>
+      {% include 'includes/header.html' %}
+    </header>
+    <main>
+      {% include 'includes/index.html' %}
+    </main>
+    <footer>
+      {% include 'includes/footer.html' %} 
+    </footer>
+  </body>
+</html> 

@@ -1,0 +1,19 @@
+{% load static %}
+<table>
+  <tr>
+    <th>Порядковый номер</th>
+    <th>Номер заказа № </th>
+    <th>Цена в валюте ($)</th>
+    <th>Цена в рублях</th>
+    <th>Планируемая дата поставки</th>
+  </tr>
+  {% for row in page_obj %}
+  <tr>
+    <td>{{ row.pk  }}</td>
+    <td>{{ row.zakaz  }}</td>
+    <td>{{ row.price_d }}</td>
+    <td>{{ row.price_r }}</td>
+    <td>{{ row.date }}</td>
+  </tr>
+  {% endfor %}
+  </table>
